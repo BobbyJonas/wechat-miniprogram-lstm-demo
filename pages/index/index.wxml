@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">输入起始词，让AI帮你创作歌词</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input
+          class="weui-input" 
+          auto-focus
+          placeholder="起始词汇" 
+          model:value="{{inputWord}}"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title"></view>
+    <button type="primary" bindtap="clickHandler">生成</button>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">输出结果</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <textarea class="weui-input" style="height: 400px" value="{{outputWord}}" />
+      </view>
+    </view>
+  </view>
+</view>
